@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TodoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// 例：TodoControllerのindexメソッドを表示したい場合
+Route::get('/', [App\Http\Controllers\TodoController::class, 'index']);
+
+Route::resource('todos', TodoController::class);
+Route::get('/todos', [TodoController::class, 'index'])->name('todos.index');
+Route::put('/todos/{id}', [TodoController::class, 'update'])->name('todos.update');
+Route::delete('/todos/{id}', [TodoController::class, 'destroy'])->name('todos.destroy');
+

@@ -1,0 +1,149 @@
+/* public/css/style.css */
+
+/* タイトルのデザイン */
+/* タイトル背景を横幅いっぱい */
+.page-title-wrapper {
+    width: 100vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background: #222;
+}
+
+.page-title {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 35px 0 25px 0;
+    letter-spacing: 3px;
+}
+/* フォームもテーブルも同じ中央寄せ＋幅 */
+.todo-form-wrapper,
+.todo-table-wrapper {
+    width: 80vw;
+    /* 好きな幅に調整 (例: 60vw～80vw) */
+    max-width: 900px;
+    margin: 0 auto 36px auto;
+    /* 中央寄せ */
+}
+
+/* 入力欄とボタンを横並び、右端にボタン */
+.todo-form-flex {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    /* 入力欄とボタンの間隔 */
+    width: 100%; 
+    justify-content: space-between;
+}
+
+
+/*.form-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 36px 0 30px 0;
+}
+
+.form-center form {
+    display: flex;
+    gap: 12px;
+    /* 入力とボタンの間を少しあける */
+    /*width: 60vw;
+    /* お好みで幅調整 */
+    /*max-width: 700px; 
+}　*/
+
+/*.form-row {
+    width: 80vw;
+    max-width: 900px;
+    margin: 0 auto 25px auto;
+    text-align: center;
+}
+
+.todo-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+
+.todo-input {
+    font-size: 1.2rem;
+    padding: 8px 12px;
+    width: 60%;
+    min-width: 200px;
+    margin-right: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+/* ボタンの色を区別 */
+.btn {
+    font-size: 1.1rem;
+    padding: 7px 26px;
+    border-radius: 6px;
+    font-weight: bold;
+    border: none;
+    margin-left: 6px;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+
+.btn-update {
+    background: #1678ff;
+    color: #fff;
+}
+
+.btn-update:hover {
+    background: #125bb0;
+}
+
+.btn-delete {
+    background: #e04545;
+    color: #fff;
+}
+
+.btn-delete:hover {
+    background: #b53030;
+}
+
+.btn-create {
+    background: #28b04c;
+    color: #fff;
+}
+
+.btn-create:hover {
+    background: #198039;
+}
+
+/* テーブル */
+table {
+    margin: 40px auto 0 auto;
+    width: 80vw;
+    max-width: 900px;
+    min-width: 400px;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+th {
+    text-align: center;
+    font-size: 1.2rem;
+    background: #fafafa;
+    padding: 12px 10px;
+}
+
+td:first-child {
+    text-align: left;
+    font-size: 1.2rem;
+    word-break: break-all;
+    max-width: 550px;
+    padding: 12px 24px 12px 10px;
+}
+
+td:last-child {
+    text-align: right;
+    min-width: 220px;
+    padding-right: 15px;
+}

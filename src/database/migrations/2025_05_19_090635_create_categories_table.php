@@ -1,10 +1,11 @@
 <?php
+//2025年5月26日作成したカテゴリーテーブルのマイグレーションファイル
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTodosTable extends Migration
+class CreateCategoriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +14,14 @@ class CreateTodosTable extends Migration
      */
     public function up()
     {
-        Schema::create('todos', function (Blueprint $table) {
+        Schema::create('categories', function (Blueprint $table) {
             $table->id();
-            $table->string('content'); // 2025年5月27日、コンテンツカラムを追加
+            $table->string('name')->unique();
             $table->timestamps();
-            $table->foreignId('category_id')->constrained('categories')->onDelete('cascade'); // 2025年5月26日外部キー制約を追加
+            //$table->categories();->nullable(true);//2025年5月26日追加
+            
         });
     }
-    
 
     /**
      * Reverse the migrations.
@@ -29,6 +30,6 @@ class CreateTodosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('todos');
+        Schema::dropIfExists('categories');
     }
 }

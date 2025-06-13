@@ -1,0 +1,163 @@
+/*body {
+    background: pink !important;
+}*/
+
+.category__alert--success {
+    padding: 10px 30px;
+    border-color: #badbcc;
+    background-color: #d1e7dd;
+    color: #0f5132;
+}
+
+.category__alert--danger {
+    padding: 10px 0;
+    border-color: #f5c2c7;
+    background-color: #f8d7da;
+    color: #842029;
+}
+
+.category__alert--danger ul {
+    margin: 0;
+}
+
+.category__content {
+    margin: 0 auto;
+    padding: 60px 15px;
+    max-width: 1230px;
+}
+
+.create-form {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+    width: 70%;
+    text-align: center;
+}
+
+.create-form__item {
+    width: 70%;
+}
+
+.create-form__item-input {
+    padding: 10px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.create-form__button {
+    width: 20%;
+}
+
+.create-form__button-submit {
+    padding: 10px 30px;
+    width: auto;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.category-table {
+    margin: 30px auto;
+    width: 70%;
+    text-align: center;
+    background: #fff;
+    border-radius: 8px;
+    padding: 24px 0;
+}
+
+.category-table__inner {
+    width: 100%;
+    margin: 0 auto;
+    teble-layout: fixed;
+
+}
+
+.category-table__row {
+    border-bottom: 1px solid #ddd;
+}
+
+.category-table__header {
+    padding: 12px;
+    width: 35%;
+    text-align: left;
+    font-weight: bold;
+    background: #fff;
+}
+
+.category-table__item:first-of-type {
+    display: flex;
+    padding: 12px;
+    align-items: center;
+    gap: 8px;
+    
+}
+
+.update-form {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    width: auto;
+}
+
+.update-form__item {
+    width: 80%;
+    line-height: 50%;
+}
+
+.update-form__item-input {
+    /* 更新フォームの入力フィールド */
+    width: auto;
+    height: auto;
+    padding: 5px 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    justify-content: flex-start;
+    border: none;
+}
+
+.update-form__button {
+    width: 50px;
+}
+
+.update-form__button-submit {
+    padding: 8px 16px;
+    width: auto;
+    border: none;
+    border-radius: 3px;
+    background: #007bff;
+        color: #fff;
+    cursor: pointer;
+}
+
+.update-delete-form {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.delete-form__button {
+    width: 50px;
+}
+
+.delete-form__button-submit {
+    padding: 8px 16px;
+    width: auto;
+    border: none;
+    border-radius: 3px;
+    background: #ff0000;
+    color: #fff;
+    cursor: pointer;
+}
+.category-table__item:last-child,
+.category-table__row td:last-child {
+    text-align: right;
+  
+}
